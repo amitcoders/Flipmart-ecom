@@ -24,14 +24,11 @@ class CategoryController extends Controller
             'category' => 'required',
         ]);
         $category = new Category();
-        // $category->category = $request->category;
-        // $category->category_slug = $this->slug_generator($request->category_slug);
         $category->category = $request->category;
         $category->category_slug = $this->slug_generator($request->category);
-
         $category->save();
 
-        return back()->with('message','category added successfully');
+        return redirect('/category/manage-category');
     }
 
     public function slug_generator($string){

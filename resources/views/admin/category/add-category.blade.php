@@ -16,7 +16,7 @@
                @endif
                 <form class="form-horizontal" method="POST" action="{{ route('save-category')}}">
                     @csrf
-                    <a class="btn btn-primary" style="margin-left: 550px;" href="">All Category</a>
+                    <a class="btn btn-primary" style="margin-left: 550px;" href="{{ route('manage-category')}}">All Category</a>
                     <div class="form-group row">
                         <label for="brand_name" class="col-lg-12 col-form-label">Category Name</label>
 

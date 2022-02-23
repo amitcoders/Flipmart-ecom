@@ -11,13 +11,21 @@ class BrandController extends Controller
         return view('admin.brand_add');
     }
 
+    // public function saveBrand(Request $request)
+    // {
+    //     $request->validate([
+    //         'brand_name' => 'required | unique:brands, brand_name | max:2',
+    //     ]);
+    //     $brand = new Brand();
+    //     $brand->brand_name = $request->brand_name;
+    //     $brand->brand_slug = $this->slug_generator($request->brand_name);
+    //     $brand->save();
+    //     return back()->with('message','Brand added successfully');
+    // }
+
     public function saveBrand(Request $request)
     {
-
-        $request->validate([
-            'brand_name' => 'required | unique:brands, brand_name | max:2',
-        ]);
-
+       
         $brand = new Brand();
         $brand->brand_name = $request->brand_name;
         $brand->brand_slug = $this->slug_generator($request->brand_name);

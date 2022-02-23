@@ -61,12 +61,30 @@
         <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Category</h6>
             <a class="collapse-item" href="{{ route('manage-category')}}">Category</a>
-            <a class="collapse-item" href="">Sub Category</a>
+            <a class="collapse-item" href="{{ route('manage-subcategory')}}">Sub Category</a>
             <a class="collapse-item" href="">Sub SubCategory</a>
+
         </div>
 
       </div>
     </li>
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseslider" aria-expanded="true"
+          aria-controls="collapseForm">
+          <i class="fab fa-fw fa-wpforms"></i>
+          <span>Slider</span>
+        </a>
+        <div id="collapseslider" class="collapse" aria-labelledby="headingForm" data-parent="#accordionSidebar">
+          <div class="bg-white py-2 collapse-inner rounded">
+              <h6 class="collapse-header">Slider</h6>
+              <a class="collapse-item" href="{{ route('manage-category')}}">Add Slider</a>
+              <a class="collapse-item" href="{{ route('manage-subcategory')}}">Manage Slider</a>
+              <a class="collapse-item" href="">Sub SubCategory</a>
+
+          </div>
+
+        </div>
+      </li>
     {{-- <li class="nav-item">
       <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseTable" aria-expanded="true"
         aria-controls="collapseTable">

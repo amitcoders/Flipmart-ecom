@@ -9,5 +9,5 @@ class Brand extends Model
 {
    use SoftDeletes;
 
-   protected $fillable = ['brand_name','brand_slug'];
+   protected $fillable = ['brand_name','brand_slug','status'];
 }
